@@ -1,3 +1,5 @@
+/* find the customer and return the product object available to an
+ * endpoint based on the customers location */
 class MongooseHelper {
 
     findOneCustomer(req, res, userModel, productModel) {
