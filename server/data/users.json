@@ -1,0 +1,15 @@
+[{
+  "_id" : ObjectId("5a9cbc610ea8ba5c2803eb67"),
+  "customerID" : 123,
+  "locationID" : "LONDON"
+},
+{
+  "_id" : ObjectId("5a9cbc8e0ea8ba5c2803eb68"),
+  "customerID" : 124,
+  "locationID" : "LONDON"
+},
+{
+  "_id" : ObjectId("5a9cbc9e0ea8ba5c2803eb69"),
+  "customerID" : 125,
+  "locationID" : "LIVERPOOL"
+}]

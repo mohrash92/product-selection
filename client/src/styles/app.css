@@ -1,0 +1,183 @@
+/* It would usually make sense in this case to split the CSS into different
+ * files, one for each component ideally but I kept the styling in one for now */
+body {
+    background-image: linear-gradient(90deg,#d7d5dd 0,#eee 30%,#eee 70%,#d7d5dd);
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+/* generic styling for all components */
+#top-image-container {
+    background-image: url("http://digitalspyuk.cdnds.net/17/33/980x490/landscape-1502909283-got3.jpg");
+
+}
+
+#bottom-image-container {
+    background-image: url("http://www.nomadstudio.com/wp-content/uploads/2016/05/SS_HOMEPAGE_DESKTOP.jpg");
+}
+
+#top-image-container, #bottom-image-container {
+    width: 97%;
+    clear: both;
+    margin: 0 auto;
+    height: 128px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 5px solid rgba(255, 255, 255, .5);
+}
+
+input {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.column-heading {
+    font-size: 30px;
+}
+.main-container {
+    width: 100%;
+    text-align: center;
+}
+
+.products-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px 14px;
+}
+.column {
+    flex: 1;
+    margin: 2px;
+    padding: 10px;
+    height: 380px;
+    position: relative;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+    border: 5px solid rgba(255, 255, 255, .5);
+}
+
+.column:first-child {
+    margin-left: 0;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.channel-container {
+    text-align: left;
+    margin: 48px;
+}
+.channel{
+    padding-left: 13px;
+    line-height: 21px;
+}
+
+/* set flex basis and sizing properties for different screen
+ * widths to make the application responsive */
+
+@media screen and (max-width: 980px) {
+    .main-container .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+    .main-container .column:nth-last-child(2) {
+        margin-right: 0;
+    }
+    .main-container .column:last-child {
+        flex-basis: 100%;
+        margin: 0;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .main-container .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+        height: 250px;
+    }
+    #confirm-checkout-button {
+        margin-bottom: 10px;
+    }
+}
+
+/* Basket Componenet */
+#faded-checkout-button, .button {
+    height: 44px;
+    width: 195px;
+    background: #BEBEBE;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -91px;
+    border-radius: 43px;
+    font-size: 16px;
+}
+
+#basket-message {
+    margin-top: 48px;
+}
+
+#basket-items {
+    text-align: center;
+    margin: 26px 0 0 -37px;
+}
+
+#basket-item {
+    margin-top: 8px;
+    color: cadetblue;
+}
+
+.button {
+    background: dodgerblue;
+    cursor: pointer;
+}
+
+#faded-checkout-button {
+    background: #BEBEBE;
+}
+
+/* ConfirmationPage Component */
+.confirmation-page {
+    flex: 1;
+    margin: 2px;
+    padding: 10px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+    border: 5px solid rgba(255, 255, 255, .5);
+    text-align: center;
+}
+
+#go-back-button, #confirm-checkout-button {
+    height: 44px;
+    width: 195px;
+    left: 50%;
+    border-radius: 43px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#go-back-button {
+    background: blanchedalmond;
+    bottom: 0;
+}
+
+#confirm-checkout-button {
+    background: dodgerblue;
+    bottom: 0;
+}
+
+#confirmation-button-wrapper{
+    margin: 15px;
+}

@@ -1,0 +1,23 @@
+[{
+  "_id" : ObjectId("5a9d60926af197ff672c0a97"),
+  "locationID" : "LONDON",
+  "sportsChannels" : [
+    "Chelsea TV",
+    "Arsenal TV"
+  ],
+  "newsChannels" : [
+    "Sky News",
+    "Sky Sports News"
+  ]
+},
+{
+  "_id" : ObjectId("5a9d60b66af197ff672c0a98"),
+  "locationID" : "LIVERPOOL",
+  "sportsChannels" : [
+    "Liverpool TV"
+  ],
+  "newsChannels" : [
+    "Sky News",
+    "Sky Sports News"
+  ]
+}]
