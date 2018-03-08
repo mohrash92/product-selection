@@ -37,7 +37,12 @@ In order for you to run the application, you must start the node server to gain 
 ## Using the Product Selection interface
 To use the interface assuming that you have done the steps in the installation part:
  
-- When visiting `localhost:8080`, you will see a list of results coming directly from the server side via an onload Ajax request. The channel choices will be based on a London user by default corresponding to the customerID cookie set in `client/src/components/App.js` on line 21.
+- When visiting `localhost:8080`, you will see a list of results coming directly from the server side via an onload Ajax request. You can select or deselect the channels you desire by clicking on the check boxes and the channels will display and remove from the basket accordingly. 
+
+- Once you are happy with your selections, you can click the checkout button which will take you to a confirmation page asking you if you are happy with the results. If you are happy then cick conform which temporarily logs your selections and customerID cookie in the web console. You also at this point have a go back choice which temporarily reloads the page re rendering all components at their initial state.
+ 
+ 
+- The channel choices will be based on a London user by default corresponding to the customerID cookie set in `client/src/components/App.js` on line 21.
 
   if you remove all cookies from your browser, change the customer ID set in the same file on line 18, and reload the page then you will see different results. Currently User 123 and 124 have a corresponding location of London so you will expect to see London base channels. However if you change this value to 125, you will see Liverpool based channels as the customer is at a different location.
    
