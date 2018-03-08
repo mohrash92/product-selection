@@ -35,7 +35,7 @@ In order for you to run he application, you must start the node server to gain e
  2) npm run dev 
  3) Visit localhost:8080 in your browser window
 
-###Running the Tests
+### Running the Tests
 - When in the `client` folder, you can run all test by runnning `npm run test`. This commmand will first run eslint and then the unit tests and you will see the results in the terminal window.
 
 
