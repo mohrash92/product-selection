@@ -39,7 +39,7 @@ To use the interface assuming that you have done the steps in the installation p
  
 - When visiting `localhost:8080`, you will see a list of results coming directly from the server side via an onload Ajax request. You can select or deselect the channels you desire by clicking on the check boxes and the channels will display and remove from the basket accordingly. 
 
-- Once you are happy with your selections, you can click the checkout button which will take you to a confirmation page asking you if you are happy with the results. If you are happy then cick conform which temporarily logs your selections and customerID cookie in the web console. You also at this point have a go back choice which temporarily reloads the page re rendering all components at their initial state.
+- Once you are happy with your selections, you can click the checkout button which will take you to a confirmation page asking you if you are happy with the results. If you are happy then click conform which temporarily logs your selections and customerID cookie in the web console. You also at this point have a "Go back" choice which temporarily reloads the page re renders all components back to their their initial state.
  
  
 - The channel choices will be based on a London user by default corresponding to the customerID cookie set in `client/src/components/App.js` on line 21.
